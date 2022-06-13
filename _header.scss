@@ -1,0 +1,131 @@
+.header{
+    .header-top{
+        background-color: #222222;
+        height: 75px;
+        width: 100%;
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+            position: relative;
+
+            .menu-left{
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                .logo{
+                    transition: all  0.5s;
+                }
+                .logo:hover{
+                    transform: scale(1.1);
+                }
+                .search{
+                    padding-left: 41px;
+                    width: 56px;
+                    display: flex;
+                    transition: all  0.5s;
+                    .menu-search{
+                        padding-left: 20px;
+                        border-radius: 20px;
+                        height: 30px;
+                        margin-left: 20px ;
+                        display: none;
+                        width: 256px;                   
+                        background: #ffffff;
+                        border: none;
+                    }
+                    &:hover .menu-search{
+                        display: flex;
+                    }
+                }
+                .search:hover{
+                    transform: scale(1.1);
+                }
+            }
+            .menu-right{
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                .menu-list{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;  
+                    .menu-list-img{
+                        transition: all 0.5s;
+                    }
+                    .menu-list-img:hover{
+                        transform: scale(1.1);
+                    }               
+                    &:hover .menu-list-box{
+                        display: block;
+                    }                    
+                    .menu-list-box{
+                        z-index: 999;
+                        display: none;
+                        flex-direction: column;
+                        background-color: #fff; 
+                        position: absolute;
+                        right: 0;
+                        height: 764px;
+                        width: 232px;
+                        top: 75px;                       
+                        .menu-list-item-heading{
+                            padding-top: 37px;
+                            padding-bottom: 4px ;
+                            padding-left: 34px;
+                            font-family: Lato;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #000000;
+                        }
+                        .menu-list-item{
+                            .menu-list-item-heading-2{
+                                padding-top: 20px;
+                                padding-left: 34px;
+                                font-family: Lato;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: #F16D7F;
+                                
+                            }
+                            .mega-link{
+                                display: block;
+                                padding-top: 12px;
+                                text-decoration: none;
+                                padding-left: 55px;
+                                font-family: Lato;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: #6F6E6E;
+                            }
+                            .mega-link:hover{
+                                color: #F16D7F;
+                            }
+                        }
+                    }
+                }
+                .person{
+                    padding-left: 25px;
+                    transition: all  0.5s;
+                }
+                .person:hover{
+                    transform: scale(1.1);
+                }
+                .basket{
+                    position: relative;
+                    padding-left: 42px;
+                    transition: all  0.5s;
+                }
+                .basket:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
